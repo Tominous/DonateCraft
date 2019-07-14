@@ -245,7 +245,7 @@ public final class PlayerData {
 		final YamlConfiguration pyml = YamlConfiguration.loadConfiguration(pfile);
 		if (!pfile.exists()) {
 			return null;
-			/*
+			
 			try {
 			pfile.createNewFile();
 			final YamlConfiguration writer = YamlConfiguration.loadConfiguration(pfile);
@@ -256,7 +256,7 @@ public final class PlayerData {
 			} catch (final IOException e) {
 				Utility.sendConsole("[DC] Couldn't save file for Player: " + p.getName());
 			}
-			*/
+			
 		}
 		ACWallet cash = null;
 		if (acbank.getACWallet(uu) == null) {
@@ -275,7 +275,7 @@ public final class PlayerData {
 		final YamlConfiguration pyml = YamlConfiguration.loadConfiguration(pfile);
 		if (!pfile.exists()) {
 			return null;
-			/*
+			
 			try {
 			pfile.createNewFile();
 			final YamlConfiguration writer = YamlConfiguration.loadConfiguration(pfile);
@@ -286,7 +286,7 @@ public final class PlayerData {
 			} catch (final IOException e) {
 				Utility.sendConsole("[DC] Couldn't save file for Player: " + p.getName());
 			}
-			*/
+			
 		}
 		if (cbank.getOriginalCash(uu) == null) {
 			final int cash = pyml.getInt("cash");
@@ -308,7 +308,7 @@ public final class PlayerData {
 		final YamlConfiguration pyml = YamlConfiguration.loadConfiguration(pfile);
 		if (!pfile.exists()) {
 			return null;
-			/*
+			
 			try {
 			pfile.createNewFile();
 			final YamlConfiguration writer = YamlConfiguration.loadConfiguration(pfile);
@@ -319,7 +319,7 @@ public final class PlayerData {
 			} catch (final IOException e) {
 				Utility.sendConsole("[DC] Couldn't save file for Player: " + p.getName());
 			}
-			*/
+			
 		}
 		if (cbank.getOriginalCash(uu) == null) {
 			final int cash = pyml.getInt("cash");
